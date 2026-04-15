@@ -1,10 +1,13 @@
 # --------- Decorators -------------
-# Decorators --> A decorator is a function that wraps another function. It takes a function as input, adds new features to it, and returns it—all without touching the original code.
+# A decorator is a function that wraps another function.
+# It takes a function as input, adds new behavior, and
+# returns it without touching the original code.
 
 
 # 1. Define the decorator function. 'func' will be the function we wrap.
 def my_decorator(func):
-    # 2. Define the 'wrapper' function. This is the "envelope" around the original function.
+    # 2. Define the 'wrapper' function.
+    # This is the "envelope" around the original function.
     def wrapper():
         print("Something is happening before the function is called.")
 
@@ -13,7 +16,7 @@ def my_decorator(func):
 
         print("Something is happening after the function is called.")
 
-    # 4. The decorator returns the wrapper, effectively replacing the original function.
+    # 4. The decorator returns the wrapper.
     return wrapper
 
 
@@ -27,19 +30,19 @@ def say_hello():
 say_hello()
 
 
-# -----------------------LOGIN Decorator---------------------------------------
+# ----------------------- LOGIN Decorator -----------------------
 # 1. The Decorator (The Security Guard)
 def login_required(func):
     # 2. The Wrapper (The Checkpoint)
-    # It takes 'user' as an argument because the function it wraps (view_profile) needs it.
+    # It takes 'user' because the wrapped function needs it.
     def wrapper(user):
         # 3. Logic Check: Does the user have the right 'key'?
         if user.get("is_authenticated"):
             # 4. If True: Let them in! Run the original function.
             return func(user)
-        else:
-            # 5. If False: Block them and show a message.
-            print("Please log in to access this function.")
+
+        # 5. If False: Block them and show a message.
+        print("Please log in to access this function.")
 
     return wrapper
 

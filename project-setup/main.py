@@ -1,6 +1,5 @@
-#Importing Modules 
-from utils.math_utils import add, subtract, multiply
-
+# Importing Modules
+from utils.math_utils import add, multiply, subtract
 
 
 def main():

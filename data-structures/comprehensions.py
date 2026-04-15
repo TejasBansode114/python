@@ -1,4 +1,6 @@
-# List comprehensions are a concise way to create lists. They consist of brackets containing an expression followed by a for clause, then zero or more for or if clauses. The expressions can be anything, meaning you can put in all kinds of objects in lists.
+# List comprehensions are a concise way to create lists.
+# They combine an expression with a for clause and optional
+# if conditions inside square brackets.
 
 numbers = [1, 2, 3, 4, 5]
 

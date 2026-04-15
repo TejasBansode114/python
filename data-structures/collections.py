@@ -1,4 +1,5 @@
-# --------- List is a collection which is ordered and changeable. Allows duplicate members.---------
+# --------- List is a collection which is ordered and changeable.
+# Allows duplicate members. ---------
 
 numbers = [1, 2, 3, 4, 5]
 
@@ -17,7 +18,8 @@ print(numbers)  # Output: [0, 1, 2, 4, 5]
 numbers[2] = 10  # Updates the value at index 2 to 10
 print(numbers)  # Output: [0, 1, 10, 4, 5]
 
-# --------- Tuple is a collection which is ordered and unchangeable. Allows duplicate members.---------
+# --------- Tuple is a collection which is ordered and unchangeable.
+# Allows duplicate members. ---------
 
 point = (10, 20)
 print(point[0])  # Output: 10
@@ -25,7 +27,8 @@ print(point[0])  # Output: 10
 # point[0] = 30  # This will raise a TypeError because tuples are immutable
 
 
-# --------- Set is a collection which is unordered and unindexed. No duplicate members.---------
+# --------- Set is a collection which is unordered and unindexed.
+# No duplicate members. ---------
 fruits = {"apple", "banana", "banana", "cherry"}
 print(fruits)  # Output: {'apple', 'banana', 'cherry'}
 
@@ -36,7 +39,8 @@ fruits.remove("banana")  # Removes 'banana' from the set
 print(fruits)  # Output: {'apple', 'cherry', 'orange'}
 
 
-# --------- Dictionary is a collection which is unordered, changeable and indexed. No duplicate members.---------
+# --------- Dictionary is a collection which is unordered,
+# changeable, and indexed. No duplicate members. ---------
 person = {"name": "Alice", "age": 30, "city": "New York"}
 print(person["name"])  # Output: Alice
 person["age"] = 31  # Updates the value of 'age' to 31

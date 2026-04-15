@@ -1,6 +1,8 @@
 number = [1, 2, 3, 4, 5]
 
-# --------- Iterators are objects that can be iterated upon, meaning that you can traverse through all the values. They implement the iterator protocol, which consists of the methods __iter__() and __next__().---------
+# --------- Iterators are objects that can be iterated upon.
+# They let you traverse through all values and implement
+# __iter__() and __next__(). ---------
 iterator = iter(number)  # Create an iterator from the list
 
 print(next(iterator))  # Output: 1
@@ -10,7 +12,8 @@ print(next(iterator))  # Output: 4
 print(next(iterator))  # Output: 5
 
 print("-------------------------------------------------------------")
-# print(next(iterator))  # This will raise a StopIteration exception because there are no more items to iterate
+# print(next(iterator))  # This raises StopIteration because
+# there are no more items to iterate.
 
 
 # Generator --

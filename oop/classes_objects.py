@@ -1,21 +1,20 @@
-# 1. THE BLUEPRINT: Think of a 'class' as a template for a person.
+# 1. THE BLUEPRINT: Think of a class as a template for a person.
 class Person:
-    # 2. THE CONSTRUCTOR: This special method runs automatically when you create a new person.
-    # 'self' represents the specific object being created (like saying "this person's").
+    # 2. THE CONSTRUCTOR: This special method runs automatically
+    # when you create a new person.
+    # 'self' represents the specific object being created.
     def __init__(self, name, age):
-        self.name = (
-            name  # Store the 'name' argument into the object's own 'name' variable
-        )
-        self.age = age  # Store the 'age' argument into the object's own 'age' variable
+        self.name = name
+        self.age = age
 
     # 3. THE METHOD: A function that belongs to this person.
     def greet(self):
-        # Using 'self.name' and 'self.age' allows the function to access that object's unique data.
+        # 'self.name' and 'self.age' access the object's unique data.
         return f"Hello, my name is {self.name} and I am {self.age} years old."
 
 
-# 4. INSTANTIATION: Creating an actual object (p1) based on the blueprint (Person).
-# We pass "Alice" and 30 into the __init__ method.
+# 4. INSTANTIATION: Creating an actual object (p1) based on
+# the blueprint (Person).
 p1 = Person("Alice", 30)
 p2 = Person("Bob", 25)
 
